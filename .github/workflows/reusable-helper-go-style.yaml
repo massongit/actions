@@ -269,7 +269,8 @@ jobs:
 
           echo '::group::🐶 Installing reviewdog ... https://github.com/reviewdog/reviewdog'
           cd reviewdog
-          go install ./cmd/reviewdog
+          go build ./cmd/reviewdog
+          PATH="$PATH:$(pwd)"
           cd ..
           echo '::endgroup::'
 
