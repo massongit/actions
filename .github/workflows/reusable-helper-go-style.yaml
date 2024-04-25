@@ -285,7 +285,7 @@ jobs:
             | xargs -r grep -n "DO NOT SUBMIT" \
             | reviewdog -efm="%f:%l:%m" \
                 -name="DO NOT SUBMIT" \
-                -reporter="github-pr-check" \
+                -reporter="github-pr-review" \
                 -filter-mode="added" \
                 -fail-on-error="true" \
                 -level="error"
