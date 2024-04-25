@@ -253,8 +253,9 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v4
         with:
-          repository: reviewdog/reviewdog
+          repository: massongit/reviewdog
           path: reviewdog
+          branch: add_fallback
 
       - name: Do Not Submit
         shell: bash
